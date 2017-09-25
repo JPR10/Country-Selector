@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/btn_do"
+                android:onClick="text_msg"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Country"
+                android:layout_marginTop="40dp"
+                android:textColor="#000"
+                android:padding="2dp"
+                android:layout_marginLeft="50dp"
+                />
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:background="@android:color/holo_red_dark"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:id="@+id/meh"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
